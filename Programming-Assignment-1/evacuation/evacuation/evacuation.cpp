@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-
+using namespace std;
 using std::vector;
 
 /* This class implements a bit unusual scheme for storing edges of the graph,
