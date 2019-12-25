@@ -69,16 +69,35 @@ FlowGraph read_data() {
     return graph;
 }
 
-int max_flow(FlowGraph& graph, int from, int to) {
+int max_flow(FlowGraph& G, int from, int to) {
     int flow = 0;
     /* your code goes here */
+    
+    // Create residual graph same as flow graph
+    FlowGraph Gf = G;
+    
+    // Find augmenting path in residual graph
+    
+
     return flow;
 }
 
+
+//
+void update_residual_graph(FlowGraph &G, FlowGraph &Gf){
+    
+}
+
+
+void find_aug_path(FlowGraph &G, FlowGraph &Gf){
+    
+}
+
+
 int main() {
     std::ios_base::sync_with_stdio(false);
-    FlowGraph graph = read_data();
+    FlowGraph G = read_data();
 
-    std::cout << max_flow(graph, 0, graph.size() - 1) << "\n";
+    std::cout << max_flow(G, 0, G.size() - 1) << "\n";
     return 0;
 }
